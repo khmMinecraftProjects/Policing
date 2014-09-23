@@ -1,0 +1,23 @@
+name: ${project.name}
+author: khmDEV
+main: ${project.groupId}.${project.artifactId}.init
+version: ${project.version}
+commands:
+   denunciar:
+      permission: denunciar.command
+      permission-message: No tienes permisos <permission>
+   denuncias:
+      permission: denuncias.command
+      permission-message: No tienes permisos <permission>
+   border:
+      permission: border.command
+      permission-message: No tienes permisos <permission>
+permissions:
+         denunciar.command:
+                 default: op
+         denuncias.command:
+                 default: op
+         border.command:
+                 default: op 
+softdepend: [APIAuxiliar]
+Depend: [APIAuxiliar]
